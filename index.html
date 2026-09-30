@@ -1,68 +1,201 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Emmanuel Nanadoum|Front-End Engineer</title>
-    <link rel="stylesheet" href="css/normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Oxygen" rel="stylesheet">
-     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
-    <header>
-      <a href="index.html" id="logo">
-      <h1>Emmanuel Nanadoum</h1>
-   <h2>Front-End Engineer</h2>
-      </a>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="selected">Portolio</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-   </header>
-    <div id="wrapper">
-      <section>
-        <ul id="gallery">
-          <li>
-            <a href="img/numbers-01.jpg">
-              <img src="img/numbers-01.jpg" alt="">
-              <p>Experimentation with color and texture.</p>
-            </a>
-         </li>
-           <li>
-              <a href="img/numbers-02.jpg">
-              <img src="img/numbers-02.jpg" alt="">
-              <p>Playing with blending modes in Photoshop.</p>
-            </a>
-         </li>
-           <li>
-              <a href="img/numbers-06.jpg">
-              <img src="img/numbers-06.jpg" alt="">
-              <p>Trying to create an 80's style of glows.</p>
-            </a>
-         </li>
-           <li>
-              <a href="img/numbers-09.jpg">
-              <img src="img/numbers-09.jpg" alt="">
-              <p>Drips created using Photoshop brushes.</p>
-            </a>
-         </li>
-           <li>
-              <a href="img/numbers-12.jpg">
-              <img src="img/numbers-12.jpg" alt="">
-              <p>Creating shapes using repetition.</p>
-            </a>
-         </li>
-        </ul>
-      </section>
-      <footer>
-        <a href="http://twitter.com/TheNanadoum"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
-        <a href="http://facebook.com/EmmanuelNanadoum"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
-        <p>&copy; 2014 Emmanuel Nanadoum.</p>
-      </footer>
-    </div>
-    </body>
-  </html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Emmanuel Nanadoum | Solutions Engineer</title>
+<meta name="description" content="Emmanuel Nanadoum is a Solutions Engineer focused on technical discovery, solution architecture, demos, APIs, CRM automation, AI workflows, and implementation handoff.">
+<meta name="theme-color" content="#f3f2ed">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f3f2ed;--ink:#11151d;--muted:#616773;--line:#c9cdd4;--blue:#3158ef;--blue2:#1839b4;--pale:#e5eaff;--white:#fff;--pad:clamp(20px,4.2vw,68px);--max:1440px;--ease:cubic-bezier(.22,1,.36,1)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;background:var(--paper)}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Schibsted Grotesk",Arial,sans-serif;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--blue);color:#fff}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:#e6e5e0}::-webkit-scrollbar-thumb{background:#8a909c;border:2px solid #e6e5e0;border-radius:8px}
+a{color:inherit;text-underline-offset:.22em}a:focus-visible,button:focus-visible{outline:3px solid var(--blue);outline-offset:4px}.wrap{width:min(var(--max),100%);margin:auto;padding-left:var(--pad);padding-right:var(--pad)}
+.nav{position:fixed;z-index:100;inset:0 0 auto 0;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 var(--pad);border-bottom:1px solid rgba(17,21,29,.12);background:rgba(243,242,237,.94);backdrop-filter:blur(12px)}
+.brand{font-weight:700;text-decoration:none;letter-spacing:-.025em}.brand b{color:var(--blue)}.nav-right{display:flex;gap:28px;align-items:center;font-size:14px}.nav-right a{text-decoration:none;color:#404650}.nav-right a:hover{color:var(--ink)}.nav-right .contact-link{padding:9px 13px;background:var(--ink);color:#fff;border-radius:8px}
+.hero{min-height:100svh;padding-top:calc(72px + clamp(42px,7vw,90px));padding-bottom:clamp(34px,5vw,70px);display:grid;grid-template-columns:minmax(0,1.08fr) minmax(380px,.92fr);gap:clamp(44px,7vw,110px);align-items:center;position:relative}
+.hero-copy{position:relative;z-index:2}.role{font-size:15px;font-weight:600;color:var(--blue);margin:0 0 20px}.hero h1{font-size:clamp(56px,7.3vw,106px);line-height:.88;letter-spacing:-.055em;margin:0;max-width:9.6ch;font-weight:600}.hero h1 .word{display:inline-block;will-change:transform}.hero-lede{font-size:clamp(18px,1.6vw,23px);max-width:620px;color:#4e5560;margin:32px 0 0}.hero-actions{display:flex;gap:24px;align-items:center;margin-top:34px}.primary{display:inline-flex;align-items:center;gap:10px;padding:13px 18px;background:var(--blue);color:#fff;border-radius:8px;text-decoration:none;font-weight:600}.primary:hover{background:var(--blue2)}.secondary{font-weight:600;text-decoration-thickness:1px}
+.portrait-zone{position:relative;min-height:650px;display:grid;place-items:center}.portrait-slab{position:absolute;inset:6% 0 2% 12%;background:var(--blue);border-radius:18px;transform:rotate(2.2deg)}.portrait-frame{position:relative;width:min(520px,88%);aspect-ratio:4/5;overflow:hidden;border-radius:18px;background:#ddd;box-shadow:24px 28px 0 rgba(17,21,29,.12);transform:rotate(-1.2deg);clip-path:inset(0 0 100% 0)}.portrait-frame img{width:100%;height:100%;object-fit:cover;object-position:50% 44%;filter:saturate(.88) contrast(1.03)}.portrait-caption{position:absolute;left:4%;bottom:0;background:var(--paper);border:1px solid var(--ink);padding:12px 15px;font-weight:600;font-size:13px;transform:rotate(-2deg)}
+.first-proof{grid-column:1/-1;display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;padding-top:30px;border-top:1px solid var(--line)}.first-proof strong{font-size:13px;color:var(--muted)}.proof-links{display:flex;justify-content:space-between;gap:20px;overflow:auto}.proof-links a{font-size:14px;text-decoration:none;white-space:nowrap;font-weight:600}.proof-links a span{color:var(--blue);margin-left:8px}
+.manifesto{padding:clamp(100px,12vw,180px) 0;border-top:1px solid var(--line)}.manifesto-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(50px,8vw,140px)}.manifesto h2{font-size:clamp(48px,6.3vw,90px);line-height:.94;letter-spacing:-.05em;margin:0;font-weight:600}.manifesto-copy{padding-top:8px}.manifesto-copy p{font-size:clamp(20px,2vw,28px);max-width:32ch;margin:0 0 32px}.principles{border-top:1px solid var(--line)}.principle{display:grid;grid-template-columns:120px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--line)}.principle span{font-weight:700;color:var(--blue)}.principle p{font-size:16px;margin:0;color:var(--muted)}
+.projects-head{padding:110px 0 54px;border-top:1px solid var(--line)}.projects-head h2{font-size:clamp(48px,6vw,84px);line-height:.95;letter-spacing:-.05em;margin:0;max-width:11ch}.projects-head p{max-width:60ch;color:var(--muted);font-size:18px;margin:22px 0 0}
+.projects-stage{position:relative}.projects-track{display:flex;width:300vw}.project{width:100vw;min-height:100svh;display:grid;grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr);align-items:center;gap:clamp(42px,6vw,90px);padding:clamp(92px,9vw,130px) var(--pad);position:relative}.project:nth-child(1){background:#e9ecfb}.project:nth-child(2){background:#10141d;color:#f5f5f0}.project:nth-child(3){background:#dfe6ff}.project-copy{max-width:560px}.project-no{font-size:13px;font-weight:700;color:var(--blue);margin-bottom:24px}.project:nth-child(2) .project-no{color:#8da4ff}.project h3{font-size:clamp(46px,5.5vw,80px);line-height:.94;letter-spacing:-.05em;margin:0}.project-summary{font-size:clamp(18px,1.6vw,22px);margin:24px 0;color:#505765;max-width:48ch}.project:nth-child(2) .project-summary{color:#b7bdc8}.fact{display:grid;grid-template-columns:110px 1fr;gap:20px;padding:14px 0;border-top:1px solid currentColor;font-size:14px}.fact b{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--blue)}.project:nth-child(2) .fact b{color:#8da4ff}.project-link{display:inline-block;margin-top:28px;font-weight:700;text-decoration-thickness:2px}.project-link:after{content:" ↗";color:var(--blue)}
+.project-visual{position:relative;min-width:0}.browser{background:#fff;border:1px solid rgba(17,21,29,.3);border-radius:14px;padding:9px;box-shadow:28px 32px 0 rgba(17,21,29,.12);transform:perspective(1100px) rotateY(-5deg);overflow:hidden}.project:nth-child(2) .browser{box-shadow:28px 32px 0 rgba(255,255,255,.08);border-color:#444b58}.browser-bar{height:30px;display:flex;align-items:center;gap:6px;padding:0 7px;background:#f0f1f3;border-radius:7px 7px 0 0}.dot{width:8px;height:8px;border-radius:50%;background:#b7bbc3}.browser img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;border-radius:0 0 7px 7px}.truth{font-size:12px;color:var(--muted);margin-top:18px;max-width:55ch}.project:nth-child(2) .truth{color:#8f96a3}
+.method{padding:clamp(110px,14vw,190px) 0}.method-layout{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(55px,9vw,150px)}.method h2{font-size:clamp(48px,6vw,86px);line-height:.95;letter-spacing:-.05em;margin:0;position:sticky;top:120px}.flow{position:relative;padding-left:54px}.flow-line{position:absolute;left:13px;top:14px;bottom:14px;width:2px;background:#d1d4da}.flow-line .fill{display:block;width:100%;height:100%;background:var(--blue);transform:scaleY(0);transform-origin:top}.step{position:relative;padding:0 0 70px}.step:before{content:"";position:absolute;left:-48px;top:7px;width:16px;height:16px;border-radius:50%;background:var(--paper);border:3px solid var(--blue)}.step span{font-size:13px;color:var(--blue);font-weight:700}.step h3{font-size:clamp(30px,3vw,44px);letter-spacing:-.035em;margin:6px 0 9px}.step p{max-width:55ch;color:var(--muted);margin:0;font-size:17px}
+.stack{background:var(--ink);color:#f6f5f0;padding:clamp(110px,13vw,180px) 0}.stack h2{font-size:clamp(48px,6vw,84px);line-height:.95;letter-spacing:-.05em;margin:0 0 64px;max-width:11ch}.stack-row{display:grid;grid-template-columns:.65fr 1.8fr;gap:40px;border-top:1px solid #3a404b;padding:24px 0}.stack-row:last-child{border-bottom:1px solid #3a404b}.stack-row strong{color:#91a5ff}.stack-row p{margin:0;color:#c4c8d1;font-size:18px}
+.contact{padding:clamp(110px,14vw,190px) 0}.contact-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr);gap:clamp(55px,9vw,150px);align-items:end}.contact h2{font-size:clamp(54px,7vw,102px);line-height:.9;letter-spacing:-.055em;margin:0;max-width:8ch}.contact-copy p{font-size:20px;color:var(--muted);max-width:40ch}.contact-list{margin-top:30px;border-top:1px solid var(--line)}.contact-list a{display:flex;justify-content:space-between;padding:16px 0;border-bottom:1px solid var(--line);font-weight:600;text-decoration:none}.contact-list a:hover{color:var(--blue)}footer{padding:28px var(--pad);border-top:1px solid var(--line);display:flex;justify-content:space-between;color:var(--muted);font-size:13px}
+@media(max-width:900px){.nav-right a:not(.contact-link){display:none}.hero{grid-template-columns:1fr;padding-top:110px}.hero h1{font-size:clamp(52px,14vw,82px);max-width:10ch}.portrait-zone{min-height:560px}.portrait-frame{width:min(470px,86%)}.first-proof{grid-template-columns:1fr;gap:12px}.proof-links{justify-content:flex-start;gap:28px}.manifesto-grid,.method-layout,.contact-grid{grid-template-columns:1fr}.method h2{position:static}.projects-track{display:block;width:auto}.project{width:auto;min-height:auto;grid-template-columns:1fr;padding-top:90px;padding-bottom:110px}.browser{transform:none;box-shadow:14px 16px 0 rgba(17,21,29,.12)}.project:nth-child(2) .browser{box-shadow:14px 16px 0 rgba(255,255,255,.08)}.project-copy{max-width:680px}.project-visual{order:-1}.stack-row{grid-template-columns:1fr;gap:8px}.contact h2{max-width:11ch}}
+@media(max-width:560px){.nav{height:64px}.nav-right{gap:12px}.contact-link{font-size:13px}.hero{padding-top:96px}.hero-actions{align-items:flex-start;flex-direction:column}.portrait-zone{min-height:470px}.portrait-slab{inset:9% 0 4% 10%}.first-proof{padding-top:20px}.proof-links{gap:20px}.manifesto,.method,.stack,.contact{padding-top:92px;padding-bottom:92px}.principle{grid-template-columns:80px 1fr}.project{padding-left:20px;padding-right:20px}.fact{grid-template-columns:90px 1fr}.contact-list a{gap:20px;overflow-wrap:anywhere}footer{flex-direction:column;gap:5px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.portrait-frame{clip-path:none!important}.hero h1 .word{transform:none!important}.projects-track{transform:none!important}.flow-line .fill{transform:none!important}*{animation-duration:.001ms!important;transition-duration:.001ms!important}}
+</style>
+</head>
+<body>
+<header class="nav">
+<a href="#top" class="brand">Emmanuel Nanadoum <b>/ SE</b></a>
+<nav class="nav-right" aria-label="Primary">
+<a href="#work">Work</a><a href="#method">Method</a><a href="#stack">Capabilities</a><a href="#contact" class="contact-link">Contact</a>
+</nav>
+</header>
+<main>
+<section class="hero wrap" id="top">
+<div class="hero-copy">
+<p class="role">Solutions Engineer · Technical Presales</p>
+<h1>I turn complex customer problems into technical wins.</h1>
+<p class="hero-lede">8+ years customer-facing, with hands-on work across CRM, AI voice, automation, APIs, technical demos, and implementation planning.</p>
+<div class="hero-actions"><a class="primary" href="#work">See the proof <span>↓</span></a><a class="secondary" href="mailto:nanadoum81@gmail.com">nanadoum81@gmail.com</a></div>
+</div>
+<div class="portrait-zone">
+<div class="portrait-slab"></div>
+<div class="portrait-frame"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3HLnt4NY7v1TCrCALr9EyOnyIdH/372608b4-4b6d-440e-883e-73bfcda879dd.jpg" alt="Emmanuel Nanadoum in a blue suit"></div>
+<div class="portrait-caption">Phoenix, AZ · Remote U.S.</div>
+</div>
+<div class="first-proof">
+<strong>SELECTED SYSTEMS</strong>
+<div class="proof-links"><a href="#cactus">AI patient acquisition <span>01</span></a><a href="#palmer">Reusable implementation blueprint <span>02</span></a><a href="#vybe">Passenger product architecture <span>03</span></a></div>
+</div>
+</section>
+
+<section class="manifesto">
+<div class="wrap manifesto-grid">
+<h2>Business clarity first. Technology second.</h2>
+<div class="manifesto-copy">
+<p>My job is to make the customer problem precise, design a credible technical path, prove it visually, and make implementation less risky.</p>
+<div class="principles">
+<div class="principle"><span>DISCOVER</span><p>Find the workflow, constraints, stakeholders, and outcome before reaching for tools.</p></div>
+<div class="principle"><span>DESIGN</span><p>Map systems, data flow, integrations, tradeoffs, and implementation boundaries.</p></div>
+<div class="principle"><span>PROVE</span><p>Build the smallest convincing demo or prototype that moves the technical conversation forward.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="work">
+<div class="wrap projects-head">
+<h2>Three projects. Three kinds of technical proof.</h2>
+<p>Each case study is based on work I actually built. Prototype, demonstration, and architecture scope are labeled plainly. No invented production metrics.</p>
+</div>
+<div class="projects-stage">
+<div class="projects-track">
+<article class="project" id="cactus">
+<div class="project-copy">
+<div class="project-no">01 / AI + CRM PRESALES POC</div>
+<h3>Cactus Chiropractic</h3>
+<p class="project-summary">A patient-acquisition demonstration connecting inbound demand, CRM, voice and SMS follow-up, booking logic, and pipeline visibility.</p>
+<div class="fact"><b>Problem</b><span>Missed opportunities and disconnected follow-up across lead capture, communication, booking, and pipeline.</span></div>
+<div class="fact"><b>My role</b><span>Discovery framing, solution mapping, customer-facing demonstration, integration points, and implementation scope.</span></div>
+<div class="fact"><b>Stack</b><span>CRM workflows, AI voice concept, Twilio voice/SMS, calendar logic, APIs and webhooks.</span></div>
+<a class="project-link" href="https://cactus-chiro.vibepreview.app/revenue-system" target="_blank" rel="noreferrer">Open prototype</a>
+<p class="truth">Prototype and demonstration environment. Production deployment and business-result metrics are not claimed.</p>
+</div>
+<div class="project-visual"><div class="browser"><div class="browser-bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i></div><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3HLnt4NY7v1TCrCALr9EyOnyIdH/97fee396-fe08-4bae-b821-38948f650ec5.png" alt="Cactus Chiropractic revenue system prototype"></div></div>
+</article>
+
+<article class="project" id="palmer">
+<div class="project-copy">
+<div class="project-no">02 / IMPLEMENTATION BLUEPRINT</div>
+<h3>Palmer &amp; Herman</h3>
+<p class="project-summary">A second chiropractic solution showing how reusable system logic can be adapted without pretending every customer has the same workflow.</p>
+<div class="fact"><b>Decision</b><span>Separate reusable revenue-system logic from client-specific presentation, messaging, and workflow requirements.</span></div>
+<div class="fact"><b>My role</b><span>Adapted the solution narrative, flow, lead-capture experience, follow-up model, and implementation boundaries.</span></div>
+<div class="fact"><b>SE value</b><span>Shows repeatability with enough flexibility to preserve customer discovery and client-specific constraints.</span></div>
+<a class="project-link" href="https://palmer-chiropractic.vibepreview.app/revenue-system" target="_blank" rel="noreferrer">Open prototype</a>
+<p class="truth">Prototype and demonstration environment. Production deployment and business-result metrics are not claimed.</p>
+</div>
+<div class="project-visual"><div class="browser"><div class="browser-bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i></div><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3HLnt4NY7v1TCrCALr9EyOnyIdH/b33fc4eb-695e-4aba-b4bf-feb912833159.png" alt="Palmer and Herman Chiropractic revenue system prototype"></div></div>
+</article>
+
+<article class="project" id="vybe">
+<div class="project-copy">
+<div class="project-no">03 / PRODUCT ARCHITECTURE</div>
+<h3>VYBE Passenger</h3>
+<p class="project-summary">A passenger-side mobile product for music, food, mood, and voice recommendations, structured as a coordinated product and technical system.</p>
+<div class="fact"><b>Scope</b><span>User flows, data objects, API responsibilities, voice and recommendation flows, subscription logic, and MVP priorities.</span></div>
+<div class="fact"><b>Stack</b><span>React Native / Expo, Supabase, Spotify integration, speech and recommendation services.</span></div>
+<div class="fact"><b>My role</b><span>Product discovery, technical coordination, system decomposition, prioritization, and implementation planning.</span></div>
+<a class="project-link" href="https://vybe-app-blue.vercel.app/" target="_blank" rel="noreferrer">Open VYBE on Vercel</a>
+<p class="truth">Product architecture and prototype work. This case study does not claim mature commercial-scale production operation.</p>
+</div>
+<div class="project-visual"><div class="browser"><div class="browser-bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i></div><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3HLnt4NY7v1TCrCALr9EyOnyIdH/b9261426-99b0-4962-828c-9f3ee0e4f2ff.png" alt="VYBE passenger application on Vercel"></div></div>
+</article>
+</div>
+</div>
+</section>
+
+<section class="method" id="method">
+<div class="wrap method-layout">
+<h2>How I work a technical sale.</h2>
+<div class="flow">
+<div class="flow-line"><span class="fill"></span></div>
+<div class="step"><span>01</span><h3>Technical discovery</h3><p>Translate symptoms into requirements. Clarify the current workflow, desired outcome, hard constraints, integrations, decision process, and what must be true for the customer to move forward.</p></div>
+<div class="step"><span>02</span><h3>Solution architecture</h3><p>Map the business need to systems, data flow, integration boundaries, tradeoffs, and a practical implementation path that both technical and nontechnical stakeholders can understand.</p></div>
+<div class="step"><span>03</span><h3>Demo and validation</h3><p>Build or tailor the proof around the customer's actual scenario. Show how the workflow changes, surface risks, and keep the demo focused on the technical decision.</p></div>
+<div class="step"><span>04</span><h3>Implementation handoff</h3><p>Document scope, assumptions, dependencies, open questions, and acceptance criteria so the solution can move from evaluation into delivery without losing context.</p></div>
+</div>
+</div>
+</section>
+
+<section class="stack" id="stack">
+<div class="wrap">
+<h2>Technical enough to go deep. Commercial enough to stay useful.</h2>
+<div class="stack-row"><strong>Presales</strong><p>Discovery, needs analysis, solution mapping, technical demos, objection handling, value articulation, implementation planning.</p></div>
+<div class="stack-row"><strong>Integration</strong><p>REST APIs, webhooks, SQL, Supabase, Twilio, CRM workflows, technical troubleshooting.</p></div>
+<div class="stack-row"><strong>Platforms</strong><p>GoHighLevel, HubSpot, Salesforce, Jira, Git/GitHub, modern web tooling, AI voice and workflow systems.</p></div>
+<div class="stack-row"><strong>Foundations</strong><p>Python, HTML, CSS, JavaScript, cloud fundamentals, solution diagrams, technical documentation, stakeholder communication.</p></div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="wrap contact-grid">
+<h2>Need someone who can bridge the room?</h2>
+<div class="contact-copy">
+<p>I am targeting Solutions Engineer, Sales Engineer, Solutions Consultant, Technical Account Manager, Customer Success Engineer, and technical implementation roles.</p>
+<div class="contact-list">
+<a href="mailto:nanadoum81@gmail.com"><span>Email</span><span>nanadoum81@gmail.com</span></a>
+<a href="tel:+16028101271"><span>Phone</span><span>602-810-1271</span></a>
+<a href="https://www.linkedin.com/in/emmanuel-nanadoum-7971b7a8" target="_blank" rel="noreferrer"><span>LinkedIn</span><span>Open profile ↗</span></a>
+<a href="https://emmanuel-presales.higgsfield.app/Emmanuel_Nanadoum_Solutions_Engineer_Resume.pdf" target="_blank" rel="noreferrer"><span>Resume</span><span>Open PDF ↗</span></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer><span>Emmanuel Nanadoum · Solutions Engineer</span><span>Phoenix, Arizona · Remote U.S.</span></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
+<script>
+(function(){
+  if(!window.gsap || !window.ScrollTrigger) return;
+  gsap.registerPlugin(ScrollTrigger);
+  var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if(reduce) return;
+  var h=document.querySelector(".hero h1");
+  var text=h.textContent.trim().split(" ");
+  h.innerHTML=text.map(function(w){return '<span class="word">'+w+'</span>';}).join(" ");
+  gsap.from(".hero h1 .word",{yPercent:115,opacity:0,duration:.9,stagger:.055,ease:"power4.out",delay:.12});
+  gsap.to(".portrait-frame",{clipPath:"inset(0% 0% 0% 0%)",duration:1.05,ease:"power4.inOut",delay:.22});
+  gsap.from(".portrait-slab",{scale:.82,rotation:-5,opacity:0,duration:1,ease:"power4.out",delay:.18});
+  gsap.from(".portrait-caption",{y:24,opacity:0,duration:.7,ease:"power3.out",delay:.75});
+  gsap.to(".portrait-frame img",{yPercent:7,ease:"none",scrollTrigger:{trigger:".hero",start:"top top",end:"bottom top",scrub:true}});
+  gsap.from(".manifesto h2",{y:50,opacity:0,duration:.9,ease:"power3.out",scrollTrigger:{trigger:".manifesto",start:"top 72%"}});
+  var mm=gsap.matchMedia();
+  mm.add("(min-width: 901px)",function(){
+    var track=document.querySelector(".projects-track");
+    var panels=gsap.utils.toArray(".project");
+    var tween=gsap.to(track,{xPercent:-100*(panels.length-1)/panels.length,ease:"none",scrollTrigger:{trigger:".projects-stage",pin:true,scrub:1,end:function(){return "+="+(window.innerWidth*(panels.length-1.15));},invalidateOnRefresh:true}});
+    panels.forEach(function(panel){
+      var visual=panel.querySelector(".browser");
+      gsap.from(visual,{scale:.9,rotateY:-9,opacity:.55,ease:"power2.out",scrollTrigger:{trigger:panel,containerAnimation:tween,start:"left 78%",end:"left 42%",scrub:true}});
+    });
+  });
+  gsap.to(".flow-line .fill",{scaleY:1,ease:"none",scrollTrigger:{trigger:".flow",start:"top 68%",end:"bottom 62%",scrub:true}});
+  gsap.utils.toArray(".step").forEach(function(el){gsap.from(el,{x:32,opacity:0,duration:.75,ease:"power3.out",scrollTrigger:{trigger:el,start:"top 82%"}});});
+  gsap.utils.toArray(".stack-row").forEach(function(el,i){gsap.from(el,{x:i%2?24:-24,opacity:0,duration:.65,ease:"power3.out",scrollTrigger:{trigger:el,start:"top 88%"}});});
+  gsap.from(".contact h2",{y:55,opacity:0,duration:.95,ease:"power4.out",scrollTrigger:{trigger:".contact",start:"top 75%"}});
+})();
+</script>
+</body>
+</html>
